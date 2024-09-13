@@ -1,21 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HubSpot Form</title>
+<title>Page Title</title>
+<link rel="stylesheet" href="
+https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
-    <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
-    <script>
-        hbspt.forms.create({
-            region: "eu1",
-            portalId: "25636661",
-            formId: "29b8f0cc-938d-4658-8ab4-e70c9967113b"
-        });
-    </script>
-</body>
 
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "eu1",
+    portalId: "25636661",
+    formId: "29b8f0cc-938d-4658-8ab4-e70c9967113b",
+    css: ".hs-form{padding:30px; background: #E5E5E3;}.hs-form fieldset.form-columns-2 input, "+
+    ".hs-form fieldset.form-columns-1 input,.hs-form fieldset.form-columns-2 select,"+
+    ".hs-form fieldset.form-columns-1 textarea {"+
+       " height: 50px;"+
+       " width: 100%;"+
+       " padding:10px 16px 10px 16px;"+
+       " border: 1px solid #BDBCBB;"+
+       " font-size: 16px;"+
+       " border-radius: 5px;"+
+       " outline:none;"+
+      "}"+
+      ".hs-form fieldset.form-columns-1{"+
+      " margin:20px 0px"+
+      "}"+
+      ".hs-form fieldset.form-columns-1 textarea {"+
+      "height: 100% !important ;"+
+       "min-height: 200px !important;"+
+      "}"+
+      ".hs_submit .actions input{"+
+        "width: 259px;"+
+        "height: 46px;"+
+        "padding: 0px 40px 0px 40px;"+
+        "gap: 8px;"+
+        "border:none;"+
+        "border-radius: 40px ;"+
+        "opacity: 0px;"+
+    "background: linear-gradient(90deg, #6E0F9D 0%, #6A16D4 100%); color:white"+
+      "}"+
+      ".hs-form fieldset.form-columns-2 label span ,"+
+      ".hs-form fieldset.form-columns-1 label span "+
+        "{"+
+          "font-size:14px ;"+
+            "color:#4D4C4D;"+
+        "}"+
+      ".hs-error-msgs{"+
+        "color:red;"+
+        "list-style-type: none;"+
+        "padding:0;"+
+        "margin:0;"+
+        "font-size:12px !important;"+
+      "}"+
+      ".hs-form-required{"+
+        "color:red !important;"+
+        "padding: 10px 5px;"+
+        "text-align:center;"+
+        "vertical-align: middle;"+
+      "}"+
+      ".hs-form fieldset ul {"+
+        "list-style-type: none;"+
+        "padding:0;"+
+        "margin:0;"+
+        "font-size:12px !important"+
+      "}"+
+      ".hs-form fieldset{ padding:40px; !important}"
+  });
+</script>
+</body>
 </html>
+ 

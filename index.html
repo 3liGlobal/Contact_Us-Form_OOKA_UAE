@@ -20,7 +20,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
   //       });
   
  
-  var email = em ? em : null;
+  // var email = em ? em : null;
   hbspt.forms.create({
     region: "eu1",
     portalId: "25636661",
@@ -83,7 +83,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
     onFormReady:function($form) {
        
         if(email){
-          $form.querySelector('input[name="email"]').value=email;
+          $form.querySelector('input[name="email"]').value='hoor';
         }
 
         }

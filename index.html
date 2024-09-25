@@ -70,7 +70,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
       ".hs-form fieldset{ padding:40px; !important}",
   
     onFormReady:function($form) {
-      console.log();
+       console.log( window.parent.document);
        var divElement = window.parent.document.getElementById("swell-customer-identification");
         var email = divElement ? divElement.getAttribute("data-email") : null;
         if(email){

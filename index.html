@@ -10,6 +10,9 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 
 <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
 <script>
+  console.log( window.parent.document);
+  var divElement = window.parent.document.getElementById("swell-customer-identification");
+  var email = divElement ? divElement.getAttribute("data-email") : null;
   hbspt.forms.create({
     region: "eu1",
     portalId: "25636661",
@@ -70,9 +73,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
       ".hs-form fieldset{ padding:40px; !important}",
   
     onFormReady:function($form) {
-       console.log( window.parent.document);
-       var divElement = window.parent.document.getElementById("swell-customer-identification");
-        var email = divElement ? divElement.getAttribute("data-email") : null;
+       
         if(email){
           $form.querySelector('input[name="email"]').value=email;
         }

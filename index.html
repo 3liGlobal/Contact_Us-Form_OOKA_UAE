@@ -70,8 +70,11 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
       ".hs-form fieldset{ padding:40px; !important}",
   
     onFormReady:function($form) {
-      console.log($form);
-        $form.find('input[name="email"]').val('hoor@gmail.com');
+      console.log();
+      // document.getElementById("hsForm_29b8f0cc-938d-4658-8ab4-e70c9967113b");
+
+      $form.querySelector('input[name="email"]').value="hoor@gmail.com"
+        
         }
   });
 </script>

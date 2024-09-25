@@ -71,7 +71,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
   
     onFormReady:function($form) {
       console.log();
-       var divElement = document.getElementById("swell-customer-identification");
+       var divElement = window.parent.document.getElementById("swell-customer-identification");
         var email = divElement ? divElement.getAttribute("data-email") : null;
         if(email){
           $form.querySelector('input[name="email"]').value=email;
